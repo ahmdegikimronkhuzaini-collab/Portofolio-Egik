@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmad Egik Imron Khuzaini | Portofolio</title>
+<meta name="description" content="Portofolio Ahmad Egik Imron Khuzaini, lulusan SMK Teknik Komputer Jaringan dan mahasiswa Teknik Industri.">
+<meta name="theme-color" content="#10131a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#10131a; --surface:#171c26; --line:#262d3b;
+  --text:#e9edf4; --muted:#9ba5b6;
+  --accent:#7cc4ff; --on-accent:#0a1624;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:1.0625rem; line-height:1.65;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:44rem; margin:0 auto; padding:0 1.5rem}
+h1,h2,h3,p{margin:0}
+
+/* Hero */
+.hero{padding:5.5rem 0 4rem}
+h1{
+  font-size:clamp(2.6rem,10vw,4.6rem); font-weight:800;
+  line-height:1.02; letter-spacing:-0.035em;
+}
+.lede{margin-top:1.5rem; max-width:34rem; font-size:1.2rem; color:var(--muted)}
+.actions{display:flex; flex-wrap:wrap; gap:.75rem; margin-top:2rem}
+.btn{
+  display:inline-block; padding:.75rem 1.25rem; border-radius:.6rem;
+  font-weight:600; text-decoration:none; border:1px solid var(--line);
+  color:var(--text); transition:background .2s,border-color .2s;
+}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent); border-color:var(--accent); color:var(--on-accent)}
+.btn.primary:hover{background:#9bd3ff}
+a:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+
+/* Sections */
+section{padding:3rem 0; border-top:1px solid var(--line)}
+h2{font-size:1.6rem; font-weight:600; letter-spacing:-0.02em; margin-bottom:1.25rem}
+h3{font-size:1rem; font-weight:600; color:var(--muted); margin:1.5rem 0 .75rem}
+.about p{max-width:38rem}
+
+/* Skills */
+.chips{display:flex; flex-wrap:wrap; gap:.5rem; padding:0; margin:0; list-style:none}
+.chips li{
+  padding:.35rem .9rem; border:1px solid var(--line); border-radius:999px;
+  background:var(--surface); font-size:.95rem;
+}
+
+/* Experience */
+.timeline{list-style:none; margin:0; padding:0 0 0 1.25rem; border-left:2px solid var(--line)}
+.timeline li{padding:0 0 1.75rem}
+.timeline li:last-child{padding-bottom:0}
+.role{font-weight:600; font-size:1.1rem}
+.org{color:var(--accent)}
+.desc{color:var(--muted); margin-top:.25rem}
+
+footer{padding:2.5rem 0 3.5rem; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn{transition:none}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header class="hero">
+    <h1>Ahmad Egik Imron Khuzaini</h1>
+    <p class="lede">Lulusan SMK Teknik Komputer Jaringan yang sekarang kuliah Teknik Industri. Saya senang memadukan sisi teknis dengan kemampuan memimpin dan bekerja dalam tim.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://wa.me/6285606574770" target="_blank" rel="noopener">Hubungi lewat WhatsApp</a>
+      <a class="btn" href="https://instagram.com/egikkhz_" target="_blank" rel="noopener">Instagram @egikkhz_</a>
+    </div>
+  </header>
+
+  <section class="about" id="tentang">
+    <h2>Tentang saya</h2>
+    <p>Saya lulusan SMKN Prigen jurusan Teknik Komputer Jaringan dan sedang menempuh kuliah Teknik Industri di Universitas Yudharta Pasuruan. Di luar kelas, saya pernah memimpin Pramuka sebagai Pradana dan magang di perusahaan penyedia layanan internet serta toko komputer.</p>
+  </section>
+
+  <section id="keahlian">
+    <h2>Keahlian</h2>
+    <h3>Soft skill</h3>
+    <ul class="chips">
+      <li>Kepemimpinan</li>
+      <li>Kerja sama tim</li>
+      <li>Komunikasi</li>
+      <li>Tanggung jawab</li>
+    </ul>
+    <h3>Software</h3>
+    <ul class="chips">
+      <li>Microsoft Word</li>
+      <li>Microsoft Excel</li>
+      <li>Microsoft PowerPoint</li>
+      <li>Jaringan komputer dasar</li>
+    </ul>
+  </section>
+
+  <section id="pengalaman">
+    <h2>Pengalaman</h2>
+    <ul class="timeline">
+      <li>
+        <p class="role">Magang</p>
+        <p class="org">PT Artha Lintas Data Mandiri</p>
+        <p class="desc">Magang di perusahaan penyedia layanan internet (ISP).</p>
+      </li>
+      <li>
+        <p class="role">Magang</p>
+        <p class="org">Dynasty Computer</p>
+        <p class="desc">Magang di toko komputer.</p>
+      </li>
+      <li>
+        <p class="role">Ketua (Pradana) Pramuka</p>
+        <p class="org">Organisasi Pramuka</p>
+        <p class="desc">Memimpin dan mengoordinasi anggota dalam kegiatan Pramuka.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p class="desc">Ingin berdiskusi atau mengajak bekerja sama? Hubungi saya lewat:</p>
+    <div class="actions">
+      <a class="btn primary" href="https://wa.me/6285606574770" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn" href="https://instagram.com/egikkhz_" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </section>
+
+</main>
+<footer>
+  <div class="wrap">© 2026 Ahmad Egik Imron Khuzaini</div>
+</footer>
+</body>
+</html>
